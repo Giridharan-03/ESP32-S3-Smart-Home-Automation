@@ -1,0 +1,109 @@
+# ESP32-S3 Smart Home Automation
+
+## 📌 Project Overview
+
+This project is an IoT-based Smart Home Automation system developed using the ESP32-S3 microcontroller and Blynk IoT platform. The system allows users to monitor and control home appliances remotely through a mobile application.
+
+The project integrates multiple sensors and actuators to provide automation, monitoring, and safety features.
+
+## 🚀 Features
+
+* Remote control of home appliances using Blynk IoT
+* Light control
+* Door lock control using a solenoid lock
+* Automatic and manual fan control
+* Water solenoid valve control
+* Temperature and humidity monitoring
+* PIR motion detection
+* Gas leakage monitoring using MQ-2 sensor
+* Flame detection for fire safety
+* Water level monitoring
+* Buzzer-based safety alerts
+* Real-time sensor data monitoring through Blynk IoT
+
+## 🔧 Hardware Components
+
+* ESP32-S3-WROOM-1
+* 4-Channel Relay Module
+* DHT11 Temperature and Humidity Sensor
+* PIR Motion Sensor
+* MQ-2 Gas Sensor
+* Flame Sensor
+* Water Level Sensor
+* Buzzer
+* Solenoid Door Lock
+* Water Solenoid Valve
+* Light
+* Fan
+* Jumper Wires
+* Power Supply
+
+## 🔌 Pin Configuration
+
+| Component          | GPIO Pin |
+| ------------------ | -------- |
+| Light Relay        | GPIO 16  |
+| Door Lock Relay    | GPIO 17  |
+| Fan Relay          | GPIO 18  |
+| Water Valve Relay  | GPIO 19  |
+| PIR Sensor         | GPIO 5   |
+| DHT11 Sensor       | GPIO 4   |
+| MQ-2 Gas Sensor    | GPIO 10  |
+| Water Level Sensor | GPIO 3   |
+| Flame Sensor       | GPIO 12  |
+| Buzzer             | GPIO 2   |
+
+## 📱 Blynk IoT Controls
+
+| Function      | Virtual Pin |
+| ------------- | ----------- |
+| Light Control | V0          |
+| Door Lock     | V1          |
+| Fan Control   | V2          |
+| Water Valve   | V3          |
+| Temperature   | V4          |
+| Humidity      | V5          |
+| Gas Level     | V6          |
+| Water Level   | V7          |
+| Flame Status  | V8          |
+| PIR Status    | V9          |
+| Gas Alert     | V10         |
+
+## ⚙️ Working Principle
+
+The ESP32-S3 acts as the main controller of the Smart Home Automation system. It collects data from various sensors and sends the information to the Blynk IoT platform through Wi-Fi.
+
+Users can remotely control the light, door lock, fan, and water valve using the Blynk mobile application.
+
+The DHT11 sensor monitors temperature and humidity. The PIR sensor detects motion. Based on motion detection and temperature conditions, the system can automatically control the fan.
+
+The MQ-2 gas sensor detects gas leakage, while the flame sensor monitors fire conditions. When a safety condition is detected, the system activates the buzzer and sends alerts through the IoT platform.
+
+The water level sensor monitors the water level, and the water solenoid valve can be controlled remotely.
+
+## 🛠️ Technologies Used
+
+* Embedded C / Arduino Programming
+* ESP32-S3
+* IoT
+* Wi-Fi Communication
+* Blynk IoT Platform
+* Sensor Interfacing
+* Relay Control
+* Hardware Interfacing
+
+## 🔄 Future Improvements
+
+* Voice control using Google Assistant or Alexa
+* Automatic water tank management
+* Mobile notifications for safety alerts
+* Energy consumption monitoring
+* AI-based home automation
+
+## 👨‍💻 Author
+
+Giridharan
+
+Electronics and Communication Engineering Graduate
+
+Aspiring Embedded Systems Engineer
